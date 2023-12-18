@@ -20,7 +20,7 @@ export class ContentComponent implements OnInit{
 
   getHeaderCoins(){
     this.api.getTrendingCoins("CAD")
-    .subscribe(res=>{
+    .subscribe((res: any)=>{
       console.log(res);
       this.headerCoins = res;
     })
@@ -28,7 +28,7 @@ export class ContentComponent implements OnInit{
 
   getAllCoins(){
     this.api.getCoins("CAD")
-    .subscribe(res=>{
+    .subscribe((res: any)=>{
       console.log(res);
     })
   }
