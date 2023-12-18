@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  selectedCurrency: string = "cad";
 
+  constructor(){}
+
+  currencyValue(event:string){
+    console.log(event);
+  }
 }
